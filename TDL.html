@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful To-Do List</title>
+  <link rel="stylesheet" href="TDL.css">
+</head>
+<body>
+  <div class="todo-container">
+        <h1>TO-DO LIST</h1>
+        <p id="current-date"></p>
+    <!-- Input for new tasks -->
+    <div class="input-group">
+      <select id="category-select">
+        <option value="School">School</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="text" id="task-input" placeholder="Add a new task...">
+      <button id="add-btn">Add</button>
+    </div>
+    <!-- Task list will appear here -->
+    <ul id="task-list"></ul>
+       <!-- Button to clear completed tasks -->
+    <button id="clear-completed">Clear Completed</button>
+  </div>
+  <script src="TDL.js"></script>
+</body>
+</html>
